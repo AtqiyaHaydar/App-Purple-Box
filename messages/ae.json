@@ -1,0 +1,208 @@
+{
+  "sidebar": {
+    "label": {
+      "dashboard": "لوحة التحكم",
+      "customizations": "تخصيص الروبوت المحادث"
+    },
+    "dashboard": {
+      "communication": "التواصل"
+    },
+    "customizations": {
+      "companyInfo": "معلومات الشركة",
+      "additionalInfo": "معلومات إضافية",
+      "linksAndPrompts": "الروابط والإرشادات",
+      "facebookLogin": "تسجيل الدخول بفيسبوك"
+    }
+  },
+  "companyInfo": {
+    "title": "معلومات الشركة",
+    "description": "املأ معلومات شركتك هنا",
+    "logo": {
+      "label": "تحميل أو تغيير الشعار",
+      "preview": "معاينة الشعار"
+    },
+    "fields": {
+      "chatbotName": {
+        "label": "اسم الروبوت المحادث",
+        "placeholder": "أدخل اسم الروبوت المحادث هنا..."
+      },
+      "customDomain": {
+        "label": "نطاق مخصص",
+        "placeholder": "أدخل النطاق المخصص هنا..."
+      },
+      "humanContact": {
+        "label": "معلومات خدمة العملاء",
+        "placeholder": "أدخل معلومات خدمة العملاء هنا..."
+      },
+      "about": {
+        "label": "عن شركتك",
+        "placeholder": "عن شركتك..."
+      },
+      "prefilled": {
+        "label": "رسالة معدة مسبقاً",
+        "placeholder": "رسالة معدة مسبقاً للروبوت المحادث..."
+      },
+      "address": {
+        "label": "العنوان",
+        "placeholder": "أدخل عنوانك هنا..."
+      },
+      "sector": {
+        "label": "قطاع الشركة",
+        "placeholder": "القطاع",
+        "sectors": {
+          "automotive": "السيارات",
+          "beauty_spa_salon": "الجمال والسبا والصالون",
+          "clothing_apparel": "الملابس والأزياء",
+          "education": "التعليم",
+          "entertainment": "الترفيه",
+          "event_planning_service": "تخطيط وخدمة الفعاليات",
+          "finance_banking": "المالية والمصرفية",
+          "food_grocery": "الطعام والبقالة",
+          "public_service": "الخدمة العامة",
+          "hotel_lodging": "الفنادق والإقامة",
+          "medical_health": "الطبية والصحية",
+          "non_profit": "غير ربحية",
+          "professional_services": "الخدمات المهنية",
+          "shopping_retail": "التسوق والبيع بالتجزئة",
+          "travel_transportation": "السفر والنقل",
+          "restaurant": "مطعم",
+          "other": "أخرى"
+        }
+      },
+      "emails": {
+        "label": "البريد الإلكتروني",
+        "placeholder": "أدخل البريد الإلكتروني...",
+        "addMore": "إضافة بريد إلكتروني"
+      }
+    }
+  },
+  "additionalInfo": {
+    "title": "معلومات إضافية",
+    "description": "تحميل ملفات لإضافة معلومات إضافية",
+    "upload": {
+      "label": "تحميل PDF / DOCX / DOC",
+      "button": "تحميل الملفات",
+      "dropFiles": "أسقط الملفات هنا...",
+      "dropMoreFiles": "أسقط المزيد من الملفات أو انقر للاختيار",
+      "dragAndDropFiles": "اسحب وأسقط الملفات هنا، أو انقر لاختيار الملفات"
+    },
+    "fileList": {
+      "title": "ملفاتك المحملة",
+      "noFiles": "لم يتم تحميل ملفات بعد"
+    }
+  },
+  "linksAndPrompts": {
+    "title": "إرشادات وروابط إضافية",
+    "description": "أضف إرشادات وروابط إضافية لروبوتك المحادث هنا",
+    "sections": {
+      "refund": "روابط الاسترداد",
+      "exchange": "روابط الاستبدال",
+      "return": "روابط الإرجاع",
+      "issues": "روابط مشاكل المنتج",
+      "payment_policy": "روابط سياسة الدفع",
+      "order_modification": "روابط تعديل الطلب",
+      "order_tracking": "روابط تتبع الطلب",
+      "kit_digital": "روابط الحزمة الرقمية",
+      "kit_consulting": "روابط استشارات الحزمة",
+      "services": "روابط الخدمات",
+      "acquisition": "روابط الاستحواذ",
+      "order": "روابط الطلب"
+    },
+    "fields": {
+      "tracking": {
+        "label": "رابط تتبع الطلب",
+        "placeholder": "أدخل رابط تتبع طلبك هنا..."
+      },
+      "order": {
+        "label": "رابط الطلب",
+        "placeholder": "أدخل رابط طلبك هنا..."
+      },
+      "prompt": {
+        "label": "إرشاد إضافي",
+        "placeholder": "أدخل إرشادك الإضافي هنا..."
+      },
+      "kitDigital": {
+        "label": "الحزمة الرقمية",
+        "placeholder": "أدخل رابط الحزمة الرقمية هنا..."
+      },
+      "kitConsulting": {
+        "label": "استشارات الحزمة",
+        "placeholder": "أدخل رابط استشارات الحزمة هنا..."
+      },
+      "services": {
+        "label": "الخدمات",
+        "placeholder": "أدخل رابط خدماتك هنا..."
+      },
+      "acquisition": {
+        "label": "الاستحواذ",
+        "placeholder": "أدخل رابط الاستحواذ هنا..."
+      },
+      "countries": {
+        "EN": "الإنجليزية",
+        "IT": "الإيطالية",
+        "ID": "الإندونيسية",
+        "ES": "الإسبانية",
+        "FR": "الفرنسية",
+        "DE": "الألمانية",
+        "PT": "البرتغالية",
+        "AE": "العربية"
+      },
+      "placeholders": {
+        "language": "اللغة"
+      }
+    },
+    "buttons": {
+      "addLink": "إضافة رابط",
+      "submit": "إرسال"
+    }
+  },
+  "login": {
+    "title": "تسجيل الدخول إلى Purple Box",
+    "username": {
+      "placeholder": "اسم المستخدم"
+    },
+    "password": {
+      "placeholder": "كلمة المرور"
+    },
+    "submit": "تسجيل الدخول"
+  },
+  "changePassword": {
+    "title": "تغيير كلمة المرور",
+    "description": "قم بتحديث كلمة مرور حسابك أدناه.",
+    "fields": {
+      "newPassword": {
+        "label": "كلمة المرور الجديدة",
+        "placeholder": "أدخل كلمة المرور الجديدة"
+      },
+      "confirmPassword": {
+        "label": "تأكيد كلمة المرور",
+        "placeholder": "أعد إدخال كلمة المرور الجديدة"
+      }
+    },
+    "buttons": {
+      "submit": "تغيير كلمة المرور"
+    }
+  },
+  "errors": {
+    "passwordMismatch": "كلمات المرور غير متطابقة."
+  },
+  "common": {
+    "submit": "إرسال",
+    "success": {
+      "title": "نجاح",
+      "fileUpload": "تم تحميل الملفات بنجاح",
+      "companyInfo": "تم تحديث معلومات الشركة بنجاح",
+      "linksPrompts": "تم تحديث الروابط والإرشادات بنجاح",
+      "passwordChange": "تم تحديث كلمة المرور بنجاح."
+    },
+    "error": {
+      "title": "خطأ",
+      "passwordChange": "فشل تحديث كلمة المرور.",
+      "default": "حدث خطأ ما",
+      "fileUpload": "فشل تحميل الملفات",
+      "companyInfo": "فشل تحديث معلومات الشركة",
+      "linksPrompts": "فشل تحديث الروابط والإرشادات",
+      "uncompleteLinks": "يرجى ملء كل من الرابط واللغة لجميع الروابط."
+    }
+  }
+}

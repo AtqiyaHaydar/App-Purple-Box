@@ -1,0 +1,208 @@
+{
+  "sidebar": {
+    "label": {
+      "dashboard": "Tablero",
+      "customizations": "Personalizaciones del Chatbot"
+    },
+    "dashboard": {
+      "communication": "Comunicación"
+    },
+    "customizations": {
+      "companyInfo": "Información de la Empresa",
+      "additionalInfo": "Información Adicional",
+      "linksAndPrompts": "Enlaces y Solicitudes",
+      "facebookLogin": "Inicio de Sesión con Facebook"
+    }
+  },
+  "companyInfo": {
+    "title": "Información de la Empresa",
+    "description": "Complete la información de su empresa aquí",
+    "logo": {
+      "label": "Subir o Cambiar Logo",
+      "preview": "Vista Previa del Logo"
+    },
+    "fields": {
+      "chatbotName": {
+        "label": "Nombre del Chatbot",
+        "placeholder": "Ingrese el nombre de su chatbot aquí..."
+      },
+      "customDomain": {
+        "label": "Dominio Personalizado",
+        "placeholder": "Ingrese su dominio personalizado aquí..."
+      },
+      "humanContact": {
+        "label": "Contacto de Servicio al Cliente",
+        "placeholder": "Ingrese el contacto de servicio al cliente aquí..."
+      },
+      "about": {
+        "label": "Sobre su empresa",
+        "placeholder": "Sobre su empresa..."
+      },
+      "prefilled": {
+        "label": "Mensaje Prellenado",
+        "placeholder": "Mensaje prellenado para el chatbot..."
+      },
+      "address": {
+        "label": "Dirección",
+        "placeholder": "Ingrese su dirección aquí..."
+      },
+      "sector": {
+        "label": "Sector de la Empresa",
+        "placeholder": "Sector",
+        "sectors": {
+          "automotive": "Automotriz",
+          "beauty_spa_salon": "Belleza, Spa y Salón",
+          "clothing_apparel": "Ropa y Moda",
+          "education": "Educación",
+          "entertainment": "Entretenimiento",
+          "event_planning_service": "Planificación y Servicio de Eventos",
+          "finance_banking": "Finanzas y Banca",
+          "food_grocery": "Alimentos y Supermercado",
+          "public_service": "Servicio Público",
+          "hotel_lodging": "Hotel y Alojamiento",
+          "medical_health": "Medicina y Salud",
+          "non_profit": "Sin Fines de Lucro",
+          "professional_services": "Servicios Profesionales",
+          "shopping_retail": "Compras y Venta al Por Menor",
+          "travel_transportation": "Viajes y Transporte",
+          "restaurant": "Restaurante",
+          "other": "Otro"
+        }
+      },
+      "emails": {
+        "label": "Correos Electrónicos",
+        "placeholder": "Ingrese la dirección de correo electrónico...",
+        "addMore": "Agregar Correo Electrónico"
+      }
+    }
+  },
+  "additionalInfo": {
+    "title": "Información Adicional",
+    "description": "Suba archivos para agregar información adicional",
+    "upload": {
+      "label": "Subir PDF / DOCX / DOC",
+      "button": "Subir Archivos",
+      "dropFiles": "Suelte los archivos aquí...",
+      "dropMoreFiles": "Suelte más archivos o haga clic para seleccionar",
+      "dragAndDropFiles": "Arrastre y suelte archivos aquí, o haga clic para seleccionar archivos"
+    },
+    "fileList": {
+      "title": "Sus Archivos Subidos",
+      "noFiles": "Aún no se han subido archivos"
+    }
+  },
+  "linksAndPrompts": {
+    "title": "Solicitudes y Enlaces Adicionales",
+    "description": "Agregue solicitudes y enlaces adicionales a su chatbot aquí",
+    "sections": {
+      "refund": "Enlaces para Reembolso",
+      "exchange": "Enlaces para Intercambio",
+      "return": "Enlaces para Devolución",
+      "issues": "Enlaces para Problemas de Producto",
+      "payment_policy": "Enlaces para Política de Pago",
+      "order_modification": "Enlaces para Modificación de Pedido",
+      "order_tracking": "Enlaces para Seguimiento de Pedido",
+      "kit_digital": "Enlaces para Kit Digital",
+      "kit_consulting": "Enlaces para Consultoría de Kit",
+      "services": "Enlaces para Servicios",
+      "acquisition": "Enlaces para Adquisición",
+      "order": "Enlaces para Pedido"
+    },
+    "fields": {
+      "tracking": {
+        "label": "Enlace de Seguimiento de Pedido",
+        "placeholder": "Ingrese su enlace de seguimiento de pedido aquí..."
+      },
+      "order": {
+        "label": "Enlace de Pedido",
+        "placeholder": "Ingrese su enlace de pedido aquí..."
+      },
+      "prompt": {
+        "label": "Solicitud Adicional",
+        "placeholder": "Ingrese su solicitud adicional aquí..."
+      },
+      "kitDigital": {
+        "label": "Kit Digital",
+        "placeholder": "Ingrese su enlace de kit digital aquí..."
+      },
+      "kitConsulting": {
+        "label": "Consultoría de Kit",
+        "placeholder": "Ingrese su enlace de consultoría de kit aquí..."
+      },
+      "services": {
+        "label": "Servicios",
+        "placeholder": "Ingrese su enlace de servicios aquí..."
+      },
+      "acquisition": {
+        "label": "Adquisición",
+        "placeholder": "Ingrese su enlace de adquisición aquí..."
+      },
+      "countries": {
+        "EN": "Inglés",
+        "IT": "Italiano",
+        "ID": "Indonesio",
+        "ES": "Español",
+        "FR": "Francés",
+        "DE": "Alemán",
+        "PT": "Portugués",
+        "AE": "Árabe"
+      },
+      "placeholders": {
+        "language": "Idioma"
+      }
+    },
+    "buttons": {
+      "addLink": "Agregar Enlace",
+      "submit": "Enviar"
+    }
+  },
+  "login": {
+    "title": "Iniciar Sesión en Purple Box",
+    "username": {
+      "placeholder": "Nombre de Usuario"
+    },
+    "password": {
+      "placeholder": "Contraseña"
+    },
+    "submit": "Iniciar Sesión"
+  },
+  "changePassword": {
+    "title": "Cambiar Contraseña",
+    "description": "Actualice la contraseña de su cuenta a continuación.",
+    "fields": {
+      "newPassword": {
+        "label": "Nueva Contraseña",
+        "placeholder": "Ingrese su nueva contraseña"
+      },
+      "confirmPassword": {
+        "label": "Confirmar Contraseña",
+        "placeholder": "Reingrese su nueva contraseña"
+      }
+    },
+    "buttons": {
+      "submit": "Cambiar Contraseña"
+    }
+  },
+  "errors": {
+    "passwordMismatch": "Las contraseñas no coinciden."
+  },
+  "common": {
+    "submit": "Enviar",
+    "success": {
+      "title": "Éxito",
+      "fileUpload": "Archivos subidos con éxito",
+      "companyInfo": "Información de la empresa actualizada con éxito",
+      "linksPrompts": "Enlaces y solicitudes actualizados con éxito",
+      "passwordChange": "Contraseña actualizada con éxito."
+    },
+    "error": {
+      "title": "Error",
+      "passwordChange": "Error al actualizar la contraseña.",
+      "default": "Algo salió mal",
+      "fileUpload": "Error al subir archivos",
+      "companyInfo": "Error al actualizar la información de la empresa",
+      "linksPrompts": "Error al actualizar los enlaces y solicitudes",
+      "uncompleteLinks": "Por favor, complete tanto la URL como el idioma para todos los enlaces."
+    }
+  }
+}

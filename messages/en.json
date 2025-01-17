@@ -2,7 +2,7 @@
   "sidebar": {
     "label": {
       "dashboard": "Dashboard",
-      "customizations": "Customizations"
+      "customizations": "Chatbot Customizations"
     },
     "dashboard": {
       "communication": "Communication"

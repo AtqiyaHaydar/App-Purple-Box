@@ -1,0 +1,208 @@
+{
+  "sidebar": {
+    "label": {
+      "dashboard": "Cruscotto",
+      "customizations": "Personalizzazioni del Chatbot"
+    },
+    "dashboard": {
+      "communication": "Comunicazione"
+    },
+    "customizations": {
+      "companyInfo": "Informazioni sull'Azienda",
+      "additionalInfo": "Informazioni Aggiuntive",
+      "linksAndPrompts": "Link e Prompt",
+      "facebookLogin": "Accesso Facebook"
+    }
+  },
+  "companyInfo": {
+    "title": "Informazioni sull'Azienda",
+    "description": "Compila qui le informazioni sulla tua azienda",
+    "logo": {
+      "label": "Carica o Cambia Logo",
+      "preview": "Anteprima Logo"
+    },
+    "fields": {
+      "chatbotName": {
+        "label": "Nome del Chatbot",
+        "placeholder": "Inserisci qui il nome del tuo chatbot..."
+      },
+      "customDomain": {
+        "label": "Dominio Personalizzato",
+        "placeholder": "Inserisci qui il tuo dominio personalizzato..."
+      },
+      "humanContact": {
+        "label": "Contatto Servizio Clienti",
+        "placeholder": "Inserisci qui il contatto del servizio clienti..."
+      },
+      "about": {
+        "label": "Informazioni sulla tua azienda",
+        "placeholder": "Informazioni sulla tua azienda..."
+      },
+      "prefilled": {
+        "label": "Messaggio Precompilato",
+        "placeholder": "Messaggio precompilato per il chatbot..."
+      },
+      "address": {
+        "label": "Indirizzo",
+        "placeholder": "Inserisci qui il tuo indirizzo..."
+      },
+      "sector": {
+        "label": "Settore Aziendale",
+        "placeholder": "Settore",
+        "sectors": {
+          "automotive": "Automobilistico",
+          "beauty_spa_salon": "Bellezza, Spa e Salone",
+          "clothing_apparel": "Abbigliamento e Moda",
+          "education": "Istruzione",
+          "entertainment": "Intrattenimento",
+          "event_planning_service": "Pianificazione e Servizio Eventi",
+          "finance_banking": "Finanza e Banca",
+          "food_grocery": "Cibo e Drogheria",
+          "public_service": "Servizio Pubblico",
+          "hotel_lodging": "Hotel e Alloggio",
+          "medical_health": "Medico e Salute",
+          "non_profit": "Non Profit",
+          "professional_services": "Servizi Professionali",
+          "shopping_retail": "Shopping e Vendita al Dettaglio",
+          "travel_transportation": "Viaggi e Trasporti",
+          "restaurant": "Ristorante",
+          "other": "Altro"
+        }
+      },
+      "emails": {
+        "label": "Email",
+        "placeholder": "Inserisci l'indirizzo email...",
+        "addMore": "Aggiungi Email"
+      }
+    }
+  },
+  "additionalInfo": {
+    "title": "Informazioni Aggiuntive",
+    "description": "Carica file per aggiungere informazioni aggiuntive",
+    "upload": {
+      "label": "Carica PDF / DOCX / DOC",
+      "button": "Carica File",
+      "dropFiles": "Rilascia i file qui...",
+      "dropMoreFiles": "Rilascia altri file o clicca per selezionare",
+      "dragAndDropFiles": "Trascina e rilascia i file qui, o clicca per selezionare i file"
+    },
+    "fileList": {
+      "title": "I tuoi file caricati",
+      "noFiles": "Nessun file caricato ancora"
+    }
+  },
+  "linksAndPrompts": {
+    "title": "Prompt e Link Aggiuntivi",
+    "description": "Aggiungi prompt e link aggiuntivi al tuo chatbot qui",
+    "sections": {
+      "refund": "Link per Rimborso",
+      "exchange": "Link per Scambio",
+      "return": "Link per Reso",
+      "issues": "Link per Problemi di Prodotto",
+      "payment_policy": "Link per Politica di Pagamento",
+      "order_modification": "Link per Modifica Ordine",
+      "order_tracking": "Link per Tracciamento Ordine",
+      "kit_digital": "Link per Kit Digitale",
+      "kit_consulting": "Link per Consulenza Kit",
+      "services": "Link per Servizi",
+      "acquisition": "Link per Acquisizione",
+      "order": "Link per Ordine"
+    },
+    "fields": {
+      "tracking": {
+        "label": "Link di Tracciamento Ordine",
+        "placeholder": "Inserisci qui il link di tracciamento ordine..."
+      },
+      "order": {
+        "label": "Link di Ordine",
+        "placeholder": "Inserisci qui il link di ordine..."
+      },
+      "prompt": {
+        "label": "Prompt Aggiuntivo",
+        "placeholder": "Inserisci qui il tuo prompt aggiuntivo..."
+      },
+      "kitDigital": {
+        "label": "Kit Digitale",
+        "placeholder": "Inserisci qui il link del kit digitale..."
+      },
+      "kitConsulting": {
+        "label": "Consulenza Kit",
+        "placeholder": "Inserisci qui il link della consulenza kit..."
+      },
+      "services": {
+        "label": "Servizi",
+        "placeholder": "Inserisci qui il link dei servizi..."
+      },
+      "acquisition": {
+        "label": "Acquisizione",
+        "placeholder": "Inserisci qui il link di acquisizione..."
+      },
+      "countries": {
+        "EN": "Inglese",
+        "IT": "Italiano",
+        "ID": "Indonesiano",
+        "ES": "Spagnolo",
+        "FR": "Francese",
+        "DE": "Tedesco",
+        "PT": "Portoghese",
+        "AE": "Arabo"
+      },
+      "placeholders": {
+        "language": "Lingua"
+      }
+    },
+    "buttons": {
+      "addLink": "Aggiungi Link",
+      "submit": "Invia"
+    }
+  },
+  "login": {
+    "title": "Accedi a Purple Box",
+    "username": {
+      "placeholder": "Nome utente"
+    },
+    "password": {
+      "placeholder": "Password"
+    },
+    "submit": "Accedi"
+  },
+  "changePassword": {
+    "title": "Cambia Password",
+    "description": "Aggiorna la password del tuo account qui sotto.",
+    "fields": {
+      "newPassword": {
+        "label": "Nuova Password",
+        "placeholder": "Inserisci la tua nuova password"
+      },
+      "confirmPassword": {
+        "label": "Conferma Password",
+        "placeholder": "Reinserisci la tua nuova password"
+      }
+    },
+    "buttons": {
+      "submit": "Cambia Password"
+    }
+  },
+  "errors": {
+    "passwordMismatch": "Le password non corrispondono."
+  },
+  "common": {
+    "submit": "Invia",
+    "success": {
+      "title": "Successo",
+      "fileUpload": "File caricati con successo",
+      "companyInfo": "Informazioni sull'azienda aggiornate con successo",
+      "linksPrompts": "Link e prompt aggiornati con successo",
+      "passwordChange": "Password aggiornata con successo."
+    },
+    "error": {
+      "title": "Errore",
+      "passwordChange": "Aggiornamento della password fallito.",
+      "default": "Qualcosa è andato storto",
+      "fileUpload": "Caricamento file fallito",
+      "companyInfo": "Aggiornamento delle informazioni sull'azienda fallito",
+      "linksPrompts": "Aggiornamento dei link e dei prompt fallito",
+      "uncompleteLinks": "Si prega di compilare sia l'URL che la lingua per tutti i link."
+    }
+  }
+}

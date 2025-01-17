@@ -1,15 +1,24 @@
 {
   "sidebar": {
-    "formData": "Data Formulir",
-    "companyInfo": "Informasi Perusahaan",
-    "additionalInfo": "Informasi Tambahan",
-    "promptsAndLinks": "Pesan dan Tautan"
+    "label": {
+      "dashboard": "Dasbor",
+      "customizations": "Kustomisasi Chatbot"
+    },
+    "dashboard": {
+      "communication": "Komunikasi"
+    },
+    "customizations": {
+      "companyInfo": "Informasi Perusahaan",
+      "additionalInfo": "Informasi Tambahan",
+      "linksAndPrompts": "Tautan & Prompt",
+      "facebookLogin": "Login Facebook"
+    }
   },
   "companyInfo": {
     "title": "Informasi Perusahaan",
     "description": "Isi informasi perusahaan Anda di sini",
     "logo": {
-      "label": "Unggah atau Ubah Logo",
+      "label": "Unggah atau Ganti Logo",
       "preview": "Pratinjau Logo"
     },
     "fields": {
@@ -26,8 +35,12 @@
         "placeholder": "Masukkan kontak layanan pelanggan Anda di sini..."
       },
       "about": {
-        "label": "Tentang Perusahaan Anda",
+        "label": "Tentang perusahaan Anda",
         "placeholder": "Tentang perusahaan Anda..."
+      },
+      "prefilled": {
+        "label": "Pesan yang sudah diisi",
+        "placeholder": "Pesan yang sudah diisi untuk chatbot..."
       },
       "address": {
         "label": "Alamat",
@@ -39,12 +52,12 @@
         "sectors": {
           "automotive": "Otomotif",
           "beauty_spa_salon": "Kecantikan, Spa, dan Salon",
-          "clothing_apparel": "Pakaian dan Aksesori",
+          "clothing_apparel": "Pakaian dan Mode",
           "education": "Pendidikan",
           "entertainment": "Hiburan",
           "event_planning_service": "Perencanaan dan Layanan Acara",
           "finance_banking": "Keuangan dan Perbankan",
-          "food_grocery": "Makanan dan Bahan Makanan",
+          "food_grocery": "Makanan dan Toko Kelontong",
           "public_service": "Layanan Publik",
           "hotel_lodging": "Hotel dan Penginapan",
           "medical_health": "Medis dan Kesehatan",
@@ -59,49 +72,62 @@
       "emails": {
         "label": "Email",
         "placeholder": "Masukkan alamat email...",
-        "addMore": "Tambah Email"
+        "addMore": "Tambahkan Email"
       }
     }
   },
   "additionalInfo": {
     "title": "Informasi Tambahan",
-    "description": "Unggah berkas untuk menambahkan informasi tambahan",
+    "description": "Unggah file untuk menambahkan informasi tambahan",
     "upload": {
       "label": "Unggah PDF / DOCX / DOC",
-      "button": "Unggah Berkas"
+      "button": "Unggah File",
+      "dropFiles": "Jatuhkan file di sini...",
+      "dropMoreFiles": "Jatuhkan lebih banyak file atau klik untuk memilih",
+      "dragAndDropFiles": "Seret & jatuhkan file di sini, atau klik untuk memilih file"
     },
     "fileList": {
-      "title": "Berkas yang Telah Diunggah",
-      "noFiles": "Belum ada berkas yang diunggah"
+      "title": "File yang Diunggah",
+      "noFiles": "Belum ada file yang diunggah"
     }
   },
   "linksAndPrompts": {
-    "title": "Pesan dan Tautan Tambahan",
-    "description": "Tambahkan pesan dan tautan tambahan ke chatbot Anda di sini",
+    "title": "Prompt dan Tautan Tambahan",
+    "description": "Tambahkan prompt dan tautan tambahan ke chatbot Anda di sini",
     "sections": {
       "refund": "Tautan untuk Pengembalian Dana",
       "exchange": "Tautan untuk Penukaran",
       "return": "Tautan untuk Pengembalian",
       "issues": "Tautan untuk Masalah Produk",
-      "payment": "Tautan untuk Kebijakan Pembayaran",
-      "modification": "Tautan untuk Modifikasi Pesanan"
+      "payment_policy": "Tautan untuk Kebijakan Pembayaran",
+      "order_modification": "Tautan untuk Modifikasi Pesanan",
+      "order_tracking": "Tautan untuk Pelacakan Pesanan",
+      "kit_digital": "Tautan untuk Kit Digital",
+      "kit_consulting": "Tautan untuk Konsultasi Kit",
+      "services": "Tautan untuk Layanan",
+      "acquisition": "Tautan untuk Akuisisi",
+      "order": "Tautan untuk Pesanan"
     },
     "fields": {
       "tracking": {
         "label": "Tautan Pelacakan Pesanan",
         "placeholder": "Masukkan tautan pelacakan pesanan Anda di sini..."
       },
+      "order": {
+        "label": "Tautan Pesanan",
+        "placeholder": "Masukkan tautan pesanan Anda di sini..."
+      },
       "prompt": {
-        "label": "Pesan Tambahan",
-        "placeholder": "Masukkan pesan tambahan Anda di sini..."
+        "label": "Prompt Tambahan",
+        "placeholder": "Masukkan prompt tambahan Anda di sini..."
       },
       "kitDigital": {
         "label": "Kit Digital",
         "placeholder": "Masukkan tautan kit digital Anda di sini..."
       },
       "kitConsulting": {
-        "label": "Kit Konsultasi",
-        "placeholder": "Masukkan tautan kit konsultasi Anda di sini..."
+        "label": "Konsultasi Kit",
+        "placeholder": "Masukkan tautan konsultasi kit Anda di sini..."
       },
       "services": {
         "label": "Layanan",
@@ -112,26 +138,36 @@
         "placeholder": "Masukkan tautan akuisisi Anda di sini..."
       },
       "countries": {
-        "EN": "Bahasa Inggris",
-        "IT": "Bahasa Italia",
-        "ID": "Bahasa Indonesia",
-        "ES": "Bahasa Spanyol",
-        "FR": "Bahasa Perancis",
-        "DE": "Bahasa Jerman",
-        "PT": "Bahasa Portugis",
-        "AE": "Bahasa Arab"
+        "EN": "Inggris",
+        "IT": "Italia",
+        "ID": "Indonesia",
+        "ES": "Spanyol",
+        "FR": "Prancis",
+        "DE": "Jerman",
+        "PT": "Portugis",
+        "AE": "Arab"
       },
       "placeholders": {
         "language": "Bahasa"
       }
     },
     "buttons": {
-      "addLink": "Tambah Tautan",
+      "addLink": "Tambahkan Tautan",
       "submit": "Kirim"
     }
   },
+  "login": {
+    "title": "Masuk ke Purple Box",
+    "username": {
+      "placeholder": "Nama Pengguna"
+    },
+    "password": {
+      "placeholder": "Kata Sandi"
+    },
+    "submit": "Masuk"
+  },
   "changePassword": {
-    "title": "Ubah Kata Sandi",
+    "title": "Ganti Kata Sandi",
     "description": "Perbarui kata sandi akun Anda di bawah ini.",
     "fields": {
       "newPassword": {
@@ -144,7 +180,7 @@
       }
     },
     "buttons": {
-      "submit": "Ubah Kata Sandi"
+      "submit": "Ganti Kata Sandi"
     }
   },
   "errors": {
@@ -153,19 +189,20 @@
   "common": {
     "submit": "Kirim",
     "success": {
-      "title": "Berhasil",
-      "fileUpload": "Berkas berhasil diunggah",
+      "title": "Sukses",
+      "fileUpload": "File berhasil diunggah",
       "companyInfo": "Informasi perusahaan berhasil diperbarui",
-      "linksPrompts": "Tautan dan pesan berhasil diperbarui",
+      "linksPrompts": "Tautan dan prompt berhasil diperbarui",
       "passwordChange": "Kata sandi berhasil diperbarui."
     },
     "error": {
       "title": "Kesalahan",
+      "passwordChange": "Gagal memperbarui kata sandi.",
       "default": "Terjadi kesalahan",
-      "fileUpload": "Gagal mengunggah berkas",
+      "fileUpload": "Gagal mengunggah file",
       "companyInfo": "Gagal memperbarui informasi perusahaan",
-      "linksPrompts": "Gagal memperbarui tautan dan pesan",
-      "passwordChange": "Gagal memperbarui kata sandi."
+      "linksPrompts": "Gagal memperbarui tautan dan prompt",
+      "uncompleteLinks": "Harap isi URL dan bahasa untuk semua tautan."
     }
   }
 }

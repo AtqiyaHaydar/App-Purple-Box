@@ -1,13 +1,22 @@
 {
   "sidebar": {
-    "formData": "Formulardaten",
-    "companyInfo": "Firmeninformationen",
-    "additionalInfo": "Zusätzliche Informationen",
-    "promptsAndLinks": "Prompts und Links"
+    "label": {
+      "dashboard": "Dashboard",
+      "customizations": "Chatbot-Anpassungen"
+    },
+    "dashboard": {
+      "communication": "Kommunikation"
+    },
+    "customizations": {
+      "companyInfo": "Unternehmensinformationen",
+      "additionalInfo": "Zusätzliche Informationen",
+      "linksAndPrompts": "Links & Eingabeaufforderungen",
+      "facebookLogin": "Facebook-Login"
+    }
   },
   "companyInfo": {
-    "title": "Firmeninformationen",
-    "description": "Geben Sie hier Ihre Firmeninformationen ein",
+    "title": "Unternehmensinformationen",
+    "description": "Füllen Sie hier Ihre Unternehmensinformationen aus",
     "logo": {
       "label": "Logo hochladen oder ändern",
       "preview": "Logo-Vorschau"
@@ -19,7 +28,7 @@
       },
       "customDomain": {
         "label": "Benutzerdefinierte Domain",
-        "placeholder": "Geben Sie hier Ihre Domain ein..."
+        "placeholder": "Geben Sie hier Ihre benutzerdefinierte Domain ein..."
       },
       "humanContact": {
         "label": "Kundendienstkontakt",
@@ -28,6 +37,10 @@
       "about": {
         "label": "Über Ihr Unternehmen",
         "placeholder": "Über Ihr Unternehmen..."
+      },
+      "prefilled": {
+        "label": "Vorausgefüllte Nachricht",
+        "placeholder": "Vorausgefüllte Nachricht für den Chatbot..."
       },
       "address": {
         "label": "Adresse",
@@ -39,7 +52,7 @@
         "sectors": {
           "automotive": "Automobil",
           "beauty_spa_salon": "Schönheit, Spa und Salon",
-          "clothing_apparel": "Kleidung und Bekleidung",
+          "clothing_apparel": "Bekleidung und Mode",
           "education": "Bildung",
           "entertainment": "Unterhaltung",
           "event_planning_service": "Eventplanung und -service",
@@ -65,10 +78,13 @@
   },
   "additionalInfo": {
     "title": "Zusätzliche Informationen",
-    "description": "Dateien hochladen, um zusätzliche Informationen hinzuzufügen",
+    "description": "Laden Sie Dateien hoch, um zusätzliche Informationen hinzuzufügen",
     "upload": {
       "label": "PDF / DOCX / DOC hochladen",
-      "button": "Dateien hochladen"
+      "button": "Dateien hochladen",
+      "dropFiles": "Dateien hier ablegen...",
+      "dropMoreFiles": "Weitere Dateien ablegen oder zum Auswählen klicken",
+      "dragAndDropFiles": "Dateien hierher ziehen und ablegen oder zum Auswählen klicken"
     },
     "fileList": {
       "title": "Ihre hochgeladenen Dateien",
@@ -76,40 +92,50 @@
     }
   },
   "linksAndPrompts": {
-    "title": "Zusätzliche Prompts und Links",
-    "description": "Fügen Sie hier zusätzliche Prompts und Links für Ihren Chatbot hinzu",
+    "title": "Zusätzliche Eingabeaufforderung und Links",
+    "description": "Fügen Sie hier zusätzliche Eingabeaufforderungen und Links zu Ihrem Chatbot hinzu",
     "sections": {
       "refund": "Links für Rückerstattung",
       "exchange": "Links für Umtausch",
-      "return": "Links für Rücksendung",
+      "return": "Links für Rückgabe",
       "issues": "Links für Produktprobleme",
-      "payment": "Links für Zahlungsrichtlinien",
-      "modification": "Links für Bestellungsänderung"
+      "payment_policy": "Links für Zahlungsrichtlinien",
+      "order_modification": "Links für Bestelländerung",
+      "order_tracking": "Links für Bestellverfolgung",
+      "kit_digital": "Links für Digitales Kit",
+      "kit_consulting": "Links für Kit-Beratung",
+      "services": "Links für Dienstleistungen",
+      "acquisition": "Links für Akquisition",
+      "order": "Links für Bestellung"
     },
     "fields": {
       "tracking": {
         "label": "Bestellverfolgungslink",
         "placeholder": "Geben Sie hier Ihren Bestellverfolgungslink ein..."
       },
+      "order": {
+        "label": "Bestelllink",
+        "placeholder": "Geben Sie hier Ihren Bestelllink ein..."
+      },
       "prompt": {
-        "label": "Zusätzlicher Prompt",
-        "placeholder": "Geben Sie hier Ihren zusätzlichen Prompt ein..."
+        "label": "Zusätzliche Eingabeaufforderung",
+        "placeholder": "Geben Sie hier Ihre zusätzliche Eingabeaufforderung ein..."
       },
       "kitDigital": {
-        "label": "Kit Digital",
-        "placeholder": "Geben Sie hier Ihren Kit Digital-Link ein..."
+        "label": "Digitales Kit",
+        "placeholder": "Geben Sie hier Ihren Link zum digitalen Kit ein..."
       },
       "kitConsulting": {
-        "label": "Kit Beratung",
-        "placeholder": "Geben Sie hier Ihren Kit Beratungs-Link ein..."
+        "label": "Kit-Beratung",
+        "placeholder": "Geben Sie hier Ihren Link zur Kit-Beratung ein..."
       },
       "services": {
         "label": "Dienstleistungen",
-        "placeholder": "Geben Sie hier Ihren Dienstleistungs-Link ein..."
+        "placeholder": "Geben Sie hier Ihren Link zu den Dienstleistungen ein..."
       },
       "acquisition": {
         "label": "Akquisition",
-        "placeholder": "Geben Sie hier Ihren Akquisitions-Link ein..."
+        "placeholder": "Geben Sie hier Ihren Akquisitionslink ein..."
       },
       "countries": {
         "EN": "Englisch",
@@ -127,45 +153,56 @@
     },
     "buttons": {
       "addLink": "Link hinzufügen",
-      "submit": "Absenden"
+      "submit": "Einreichen"
     }
   },
+  "login": {
+    "title": "Anmeldung bei Purple Box",
+    "username": {
+      "placeholder": "Benutzername"
+    },
+    "password": {
+      "placeholder": "Passwort"
+    },
+    "submit": "Anmelden"
+  },
   "changePassword": {
-    "title": "Passwort Ändern",
-    "description": "Aktualisieren Sie unten Ihr Kontopasswort.",
+    "title": "Passwort ändern",
+    "description": "Aktualisieren Sie Ihr Kontopasswort unten.",
     "fields": {
       "newPassword": {
         "label": "Neues Passwort",
         "placeholder": "Geben Sie Ihr neues Passwort ein"
       },
       "confirmPassword": {
-        "label": "Passwort Bestätigen",
+        "label": "Passwort bestätigen",
         "placeholder": "Geben Sie Ihr neues Passwort erneut ein"
       }
     },
     "buttons": {
-      "submit": "Passwort Ändern"
+      "submit": "Passwort ändern"
     }
   },
   "errors": {
     "passwordMismatch": "Passwörter stimmen nicht überein."
   },
   "common": {
-    "submit": "Absenden",
+    "submit": "Einreichen",
     "success": {
       "title": "Erfolg",
       "fileUpload": "Dateien erfolgreich hochgeladen",
-      "companyInfo": "Firmeninformationen erfolgreich aktualisiert",
-      "linksPrompts": "Links und Prompts erfolgreich aktualisiert",
+      "companyInfo": "Unternehmensinformationen erfolgreich aktualisiert",
+      "linksPrompts": "Links und Eingabeaufforderungen erfolgreich aktualisiert",
       "passwordChange": "Passwort erfolgreich aktualisiert."
     },
     "error": {
       "title": "Fehler",
+      "passwordChange": "Passwortaktualisierung fehlgeschlagen.",
       "default": "Etwas ist schief gelaufen",
-      "fileUpload": "Fehler beim Hochladen der Dateien",
-      "companyInfo": "Fehler beim Aktualisieren der Firmeninformationen",
-      "linksPrompts": "Fehler beim Aktualisieren der Links und Prompts",
-      "passwordChange": "Passwortaktualisierung fehlgeschlagen."
+      "fileUpload": "Datei-Upload fehlgeschlagen",
+      "companyInfo": "Aktualisierung der Unternehmensinformationen fehlgeschlagen",
+      "linksPrompts": "Aktualisierung der Links und Eingabeaufforderungen fehlgeschlagen",
+      "uncompleteLinks": "Bitte füllen Sie sowohl URL als auch Sprache für alle Links aus."
     }
   }
 }
