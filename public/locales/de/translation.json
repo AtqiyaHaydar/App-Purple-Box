@@ -1,0 +1,171 @@
+{
+  "sidebar": {
+    "formData": "Formulardaten",
+    "companyInfo": "Firmeninformationen",
+    "additionalInfo": "Zusätzliche Informationen",
+    "promptsAndLinks": "Prompts und Links"
+  },
+  "companyInfo": {
+    "title": "Firmeninformationen",
+    "description": "Geben Sie hier Ihre Firmeninformationen ein",
+    "logo": {
+      "label": "Logo hochladen oder ändern",
+      "preview": "Logo-Vorschau"
+    },
+    "fields": {
+      "chatbotName": {
+        "label": "Chatbot-Name",
+        "placeholder": "Geben Sie hier den Namen Ihres Chatbots ein..."
+      },
+      "customDomain": {
+        "label": "Benutzerdefinierte Domain",
+        "placeholder": "Geben Sie hier Ihre Domain ein..."
+      },
+      "humanContact": {
+        "label": "Kundendienstkontakt",
+        "placeholder": "Geben Sie hier Ihren Kundendienstkontakt ein..."
+      },
+      "about": {
+        "label": "Über Ihr Unternehmen",
+        "placeholder": "Über Ihr Unternehmen..."
+      },
+      "address": {
+        "label": "Adresse",
+        "placeholder": "Geben Sie hier Ihre Adresse ein..."
+      },
+      "sector": {
+        "label": "Unternehmenssektor",
+        "placeholder": "Sektor",
+        "sectors": {
+          "automotive": "Automobil",
+          "beauty_spa_salon": "Schönheit, Spa und Salon",
+          "clothing_apparel": "Kleidung und Bekleidung",
+          "education": "Bildung",
+          "entertainment": "Unterhaltung",
+          "event_planning_service": "Eventplanung und -service",
+          "finance_banking": "Finanzen und Bankwesen",
+          "food_grocery": "Lebensmittel und Lebensmittelgeschäft",
+          "public_service": "Öffentlicher Dienst",
+          "hotel_lodging": "Hotel und Unterkunft",
+          "medical_health": "Medizin und Gesundheit",
+          "non_profit": "Gemeinnützig",
+          "professional_services": "Professionelle Dienstleistungen",
+          "shopping_retail": "Einkaufen und Einzelhandel",
+          "travel_transportation": "Reisen und Transport",
+          "restaurant": "Restaurant",
+          "other": "Andere"
+        }
+      },
+      "emails": {
+        "label": "E-Mails",
+        "placeholder": "E-Mail-Adresse eingeben...",
+        "addMore": "E-Mail hinzufügen"
+      }
+    }
+  },
+  "additionalInfo": {
+    "title": "Zusätzliche Informationen",
+    "description": "Dateien hochladen, um zusätzliche Informationen hinzuzufügen",
+    "upload": {
+      "label": "PDF / DOCX / DOC hochladen",
+      "button": "Dateien hochladen"
+    },
+    "fileList": {
+      "title": "Ihre hochgeladenen Dateien",
+      "noFiles": "Noch keine Dateien hochgeladen"
+    }
+  },
+  "linksAndPrompts": {
+    "title": "Zusätzliche Prompts und Links",
+    "description": "Fügen Sie hier zusätzliche Prompts und Links für Ihren Chatbot hinzu",
+    "sections": {
+      "refund": "Links für Rückerstattung",
+      "exchange": "Links für Umtausch",
+      "return": "Links für Rücksendung",
+      "issues": "Links für Produktprobleme",
+      "payment": "Links für Zahlungsrichtlinien",
+      "modification": "Links für Bestellungsänderung"
+    },
+    "fields": {
+      "tracking": {
+        "label": "Bestellverfolgungslink",
+        "placeholder": "Geben Sie hier Ihren Bestellverfolgungslink ein..."
+      },
+      "prompt": {
+        "label": "Zusätzlicher Prompt",
+        "placeholder": "Geben Sie hier Ihren zusätzlichen Prompt ein..."
+      },
+      "kitDigital": {
+        "label": "Kit Digital",
+        "placeholder": "Geben Sie hier Ihren Kit Digital-Link ein..."
+      },
+      "kitConsulting": {
+        "label": "Kit Beratung",
+        "placeholder": "Geben Sie hier Ihren Kit Beratungs-Link ein..."
+      },
+      "services": {
+        "label": "Dienstleistungen",
+        "placeholder": "Geben Sie hier Ihren Dienstleistungs-Link ein..."
+      },
+      "acquisition": {
+        "label": "Akquisition",
+        "placeholder": "Geben Sie hier Ihren Akquisitions-Link ein..."
+      },
+      "countries": {
+        "EN": "Englisch",
+        "IT": "Italienisch",
+        "ID": "Indonesisch",
+        "ES": "Spanisch",
+        "FR": "Französisch",
+        "DE": "Deutsch",
+        "PT": "Portugiesisch",
+        "AE": "Arabisch"
+      },
+      "placeholders": {
+        "language": "Sprache"
+      }
+    },
+    "buttons": {
+      "addLink": "Link hinzufügen",
+      "submit": "Absenden"
+    }
+  },
+  "changePassword": {
+    "title": "Passwort Ändern",
+    "description": "Aktualisieren Sie unten Ihr Kontopasswort.",
+    "fields": {
+      "newPassword": {
+        "label": "Neues Passwort",
+        "placeholder": "Geben Sie Ihr neues Passwort ein"
+      },
+      "confirmPassword": {
+        "label": "Passwort Bestätigen",
+        "placeholder": "Geben Sie Ihr neues Passwort erneut ein"
+      }
+    },
+    "buttons": {
+      "submit": "Passwort Ändern"
+    }
+  },
+  "errors": {
+    "passwordMismatch": "Passwörter stimmen nicht überein."
+  },
+  "common": {
+    "submit": "Absenden",
+    "success": {
+      "title": "Erfolg",
+      "fileUpload": "Dateien erfolgreich hochgeladen",
+      "companyInfo": "Firmeninformationen erfolgreich aktualisiert",
+      "linksPrompts": "Links und Prompts erfolgreich aktualisiert",
+      "passwordChange": "Passwort erfolgreich aktualisiert."
+    },
+    "error": {
+      "title": "Fehler",
+      "default": "Etwas ist schief gelaufen",
+      "fileUpload": "Fehler beim Hochladen der Dateien",
+      "companyInfo": "Fehler beim Aktualisieren der Firmeninformationen",
+      "linksPrompts": "Fehler beim Aktualisieren der Links und Prompts",
+      "passwordChange": "Passwortaktualisierung fehlgeschlagen."
+    }
+  }
+}

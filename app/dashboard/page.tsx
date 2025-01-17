@@ -15,11 +15,10 @@ const CRMDashboard = async () => {
   } = await supabase.auth.getUser();
   return (
     <div className="h-screen">
-      <Sidebar />
       <div className="p-4 h-screen font-gotham">
         <div
           className={cn(
-            "relative transition-all duration-500 w-auto h-full rounded-xl p-[1px] bg-gradient lg:ml-[325px]"
+            "relative transition-all duration-500 md:w-[75vw] 2xl:w-[81vw] h-full rounded-xl p-[1px] bg-gradient "
           )}
         >
           <div className="bg-[#0A0A0A] relative w-full h-full inset-0 rounded-xl flex flex-col items-center">

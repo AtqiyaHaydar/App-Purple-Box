@@ -1,0 +1,172 @@
+{
+  "sidebar": {
+    "formData": "Datos del Formulario",
+    "companyInfo": "Información de la Empresa",
+    "additionalInfo": "Información Adicional",
+    "promptsAndLinks": "Mensajes y Enlaces"
+  },
+  "companyInfo": {
+    "title": "Información de la Empresa",
+    "description": "Complete la información de su empresa aquí",
+    "logo": {
+      "label": "Subir o Cambiar Logo",
+      "preview": "Vista Previa del Logo"
+    },
+    "fields": {
+      "chatbotName": {
+        "label": "Nombre del Chatbot",
+        "placeholder": "Ingrese el nombre de su chatbot aquí..."
+      },
+      "customDomain": {
+        "label": "Dominio Personalizado",
+        "placeholder": "Ingrese su dominio personalizado aquí..."
+      },
+      "humanContact": {
+        "label": "Contacto de Servicio al Cliente",
+        "placeholder": "Ingrese su contacto de servicio al cliente aquí..."
+      },
+      "about": {
+        "label": "Sobre su empresa",
+        "placeholder": "Sobre su empresa..."
+      },
+      "prefilled": {
+        "label": "Vorausgefüllte Nachricht",
+        "placeholder": "Vorausgefüllte Nachricht für den Chatbot..."
+      },
+      "address": {
+        "label": "Dirección",
+        "placeholder": "Ingrese su dirección aquí..."
+      },
+      "sector": {
+        "label": "Sector de la Empresa",
+        "placeholder": "Sector",
+        "sectors": {
+          "automotive": "Automotriz",
+          "beauty_spa_salon": "Belleza, Spa y Salón",
+          "clothing_apparel": "Ropa y Vestimenta",
+          "education": "Educación",
+          "entertainment": "Entretenimiento",
+          "event_planning_service": "Planificación y Servicio de Eventos",
+          "finance_banking": "Finanzas y Banca",
+          "food_grocery": "Alimentos y Comestibles",
+          "public_service": "Servicio Público",
+          "hotel_lodging": "Hotel y Alojamiento",
+          "medical_health": "Médico y Salud",
+          "non_profit": "Sin Fines de Lucro",
+          "professional_services": "Servicios Profesionales",
+          "shopping_retail": "Compras y Venta al por Menor",
+          "travel_transportation": "Viajes y Transporte",
+          "restaurant": "Restaurante",
+          "other": "Otro"
+        }
+      },
+      "emails": {
+        "label": "Correos electrónicos",
+        "placeholder": "Ingrese dirección de correo...",
+        "addMore": "Agregar Correo"
+      }
+    }
+  },
+
+  "additionalInfo": {
+    "title": "Información Adicional",
+    "description": "Sube archivos para añadir información adicional",
+    "upload": {
+      "label": "Subir PDF / DOCX / DOC",
+      "button": "Subir Archivos"
+    },
+    "fileList": {
+      "title": "Sus Archivos Subidos",
+      "noFiles": "Aún no hay archivos subidos"
+    }
+  },
+  "linksAndPrompts": {
+    "title": "Mensajes y Enlaces Adicionales",
+    "description": "Añada mensajes y enlaces adicionales a su chatbot aquí",
+    "sections": {
+      "refund": "Enlaces para Reembolso",
+      "exchange": "Enlaces para Cambios",
+      "return": "Enlaces para Devoluciones",
+      "issues": "Enlaces para Problemas de Producto",
+      "payment": "Enlaces para Política de Pago",
+      "modification": "Enlaces para Modificación de Pedidos"
+    },
+    "fields": {
+      "tracking": {
+        "label": "Enlace de Seguimiento de Pedido",
+        "placeholder": "Ingrese su enlace de seguimiento aquí..."
+      },
+      "prompt": {
+        "label": "Mensaje Adicional",
+        "placeholder": "Ingrese su mensaje adicional aquí..."
+      },
+      "countries": {
+        "EN": "Inglés",
+        "IT": "Italiano",
+        "ID": "Indonesio",
+        "ES": "Español",
+        "FR": "Francés",
+        "DE": "Alemán",
+        "PT": "Portugués",
+        "AE": "Árabe"
+      },
+      "placeholders": {
+        "language": "Idioma"
+      },
+      "kitDigital": {
+        "label": "Kit Digital",
+        "placeholder": "Ingresa tu enlace de kit digital aquí..."
+      },
+      "kitConsulting": {
+        "label": "Kit de Consultoría",
+        "placeholder": "Ingresa tu enlace de kit de consultoría aquí..."
+      },
+      "services": {
+        "label": "Servicios",
+        "placeholder": "Ingresa tu enlace de servicios aquí..."
+      },
+      "acquisition": {
+        "label": "Adquisición",
+        "placeholder": "Ingresa tu enlace de adquisición aquí..."
+      }
+    }
+  },
+  "changePassword": {
+    "title": "Cambiar Contraseña",
+    "description": "Actualiza la contraseña de tu cuenta a continuación.",
+    "fields": {
+      "newPassword": {
+        "label": "Nueva Contraseña",
+        "placeholder": "Ingresa tu nueva contraseña"
+      },
+      "confirmPassword": {
+        "label": "Confirmar Contraseña",
+        "placeholder": "Reingresa tu nueva contraseña"
+      }
+    },
+    "buttons": {
+      "submit": "Cambiar Contraseña"
+    }
+  },
+  "errors": {
+    "passwordMismatch": "Las contraseñas no coinciden."
+  },
+  "common": {
+    "submit": "Enviar",
+    "success": {
+      "title": "Éxito",
+      "fileUpload": "Archivos subidos exitosamente",
+      "companyInfo": "Información de empresa actualizada exitosamente",
+      "linksPrompts": "Enlaces y mensajes actualizados exitosamente",
+      "passwordChange": "Contraseña actualizada exitosamente."
+    },
+    "error": {
+      "title": "Error",
+      "default": "Algo salió mal",
+      "fileUpload": "Error al subir archivos",
+      "companyInfo": "Error al actualizar información de empresa",
+      "linksPrompts": "Error al actualizar enlaces y mensajes",
+      "passwordChange": "Error al actualizar la contraseña."
+    }
+  }
+}

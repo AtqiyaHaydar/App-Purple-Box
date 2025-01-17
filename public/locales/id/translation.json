@@ -1,0 +1,171 @@
+{
+  "sidebar": {
+    "formData": "Data Formulir",
+    "companyInfo": "Informasi Perusahaan",
+    "additionalInfo": "Informasi Tambahan",
+    "promptsAndLinks": "Pesan dan Tautan"
+  },
+  "companyInfo": {
+    "title": "Informasi Perusahaan",
+    "description": "Isi informasi perusahaan Anda di sini",
+    "logo": {
+      "label": "Unggah atau Ubah Logo",
+      "preview": "Pratinjau Logo"
+    },
+    "fields": {
+      "chatbotName": {
+        "label": "Nama Chatbot",
+        "placeholder": "Masukkan nama chatbot Anda di sini..."
+      },
+      "customDomain": {
+        "label": "Domain Kustom",
+        "placeholder": "Masukkan domain kustom Anda di sini..."
+      },
+      "humanContact": {
+        "label": "Kontak Layanan Pelanggan",
+        "placeholder": "Masukkan kontak layanan pelanggan Anda di sini..."
+      },
+      "about": {
+        "label": "Tentang Perusahaan Anda",
+        "placeholder": "Tentang perusahaan Anda..."
+      },
+      "address": {
+        "label": "Alamat",
+        "placeholder": "Masukkan alamat Anda di sini..."
+      },
+      "sector": {
+        "label": "Sektor Perusahaan",
+        "placeholder": "Sektor",
+        "sectors": {
+          "automotive": "Otomotif",
+          "beauty_spa_salon": "Kecantikan, Spa, dan Salon",
+          "clothing_apparel": "Pakaian dan Aksesori",
+          "education": "Pendidikan",
+          "entertainment": "Hiburan",
+          "event_planning_service": "Perencanaan dan Layanan Acara",
+          "finance_banking": "Keuangan dan Perbankan",
+          "food_grocery": "Makanan dan Bahan Makanan",
+          "public_service": "Layanan Publik",
+          "hotel_lodging": "Hotel dan Penginapan",
+          "medical_health": "Medis dan Kesehatan",
+          "non_profit": "Nirlaba",
+          "professional_services": "Layanan Profesional",
+          "shopping_retail": "Belanja dan Ritel",
+          "travel_transportation": "Perjalanan dan Transportasi",
+          "restaurant": "Restoran",
+          "other": "Lainnya"
+        }
+      },
+      "emails": {
+        "label": "Email",
+        "placeholder": "Masukkan alamat email...",
+        "addMore": "Tambah Email"
+      }
+    }
+  },
+  "additionalInfo": {
+    "title": "Informasi Tambahan",
+    "description": "Unggah berkas untuk menambahkan informasi tambahan",
+    "upload": {
+      "label": "Unggah PDF / DOCX / DOC",
+      "button": "Unggah Berkas"
+    },
+    "fileList": {
+      "title": "Berkas yang Telah Diunggah",
+      "noFiles": "Belum ada berkas yang diunggah"
+    }
+  },
+  "linksAndPrompts": {
+    "title": "Pesan dan Tautan Tambahan",
+    "description": "Tambahkan pesan dan tautan tambahan ke chatbot Anda di sini",
+    "sections": {
+      "refund": "Tautan untuk Pengembalian Dana",
+      "exchange": "Tautan untuk Penukaran",
+      "return": "Tautan untuk Pengembalian",
+      "issues": "Tautan untuk Masalah Produk",
+      "payment": "Tautan untuk Kebijakan Pembayaran",
+      "modification": "Tautan untuk Modifikasi Pesanan"
+    },
+    "fields": {
+      "tracking": {
+        "label": "Tautan Pelacakan Pesanan",
+        "placeholder": "Masukkan tautan pelacakan pesanan Anda di sini..."
+      },
+      "prompt": {
+        "label": "Pesan Tambahan",
+        "placeholder": "Masukkan pesan tambahan Anda di sini..."
+      },
+      "kitDigital": {
+        "label": "Kit Digital",
+        "placeholder": "Masukkan tautan kit digital Anda di sini..."
+      },
+      "kitConsulting": {
+        "label": "Kit Konsultasi",
+        "placeholder": "Masukkan tautan kit konsultasi Anda di sini..."
+      },
+      "services": {
+        "label": "Layanan",
+        "placeholder": "Masukkan tautan layanan Anda di sini..."
+      },
+      "acquisition": {
+        "label": "Akuisisi",
+        "placeholder": "Masukkan tautan akuisisi Anda di sini..."
+      },
+      "countries": {
+        "EN": "Bahasa Inggris",
+        "IT": "Bahasa Italia",
+        "ID": "Bahasa Indonesia",
+        "ES": "Bahasa Spanyol",
+        "FR": "Bahasa Perancis",
+        "DE": "Bahasa Jerman",
+        "PT": "Bahasa Portugis",
+        "AE": "Bahasa Arab"
+      },
+      "placeholders": {
+        "language": "Bahasa"
+      }
+    },
+    "buttons": {
+      "addLink": "Tambah Tautan",
+      "submit": "Kirim"
+    }
+  },
+  "changePassword": {
+    "title": "Ubah Kata Sandi",
+    "description": "Perbarui kata sandi akun Anda di bawah ini.",
+    "fields": {
+      "newPassword": {
+        "label": "Kata Sandi Baru",
+        "placeholder": "Masukkan kata sandi baru Anda"
+      },
+      "confirmPassword": {
+        "label": "Konfirmasi Kata Sandi",
+        "placeholder": "Masukkan kembali kata sandi baru Anda"
+      }
+    },
+    "buttons": {
+      "submit": "Ubah Kata Sandi"
+    }
+  },
+  "errors": {
+    "passwordMismatch": "Kata sandi tidak cocok."
+  },
+  "common": {
+    "submit": "Kirim",
+    "success": {
+      "title": "Berhasil",
+      "fileUpload": "Berkas berhasil diunggah",
+      "companyInfo": "Informasi perusahaan berhasil diperbarui",
+      "linksPrompts": "Tautan dan pesan berhasil diperbarui",
+      "passwordChange": "Kata sandi berhasil diperbarui."
+    },
+    "error": {
+      "title": "Kesalahan",
+      "default": "Terjadi kesalahan",
+      "fileUpload": "Gagal mengunggah berkas",
+      "companyInfo": "Gagal memperbarui informasi perusahaan",
+      "linksPrompts": "Gagal memperbarui tautan dan pesan",
+      "passwordChange": "Gagal memperbarui kata sandi."
+    }
+  }
+}

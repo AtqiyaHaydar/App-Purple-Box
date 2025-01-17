@@ -59,7 +59,7 @@ export default function LoginPage() {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-primary-dark">
+    <div className="min-h-screen flex items-center justify-center bg-primary-dark w-screen">
       <div className="bg-white/5 p-8 rounded-lg shadow-lg w-full max-w-md bg">
         <h1 className="text-2xl font-bold text-white mb-6 text-center">
           Login to Purple Box CRM

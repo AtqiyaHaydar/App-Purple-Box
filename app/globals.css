@@ -14,6 +14,30 @@ body {
 
 @layer base {
   :root {
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  :root {
     --background: 0 0% 100%;
     --foreground: 0 0% 3.9%;
     --card: 0 0% 100%;
@@ -39,6 +63,14 @@ body {
     --chart-4: 43 74% 66%;
     --chart-5: 27 87% 67%;
     --radius: 0.5rem;
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
   }
   .dark {
     --background: 0 0% 3.9%;
@@ -65,169 +97,177 @@ body {
     --chart-3: 30 80% 55%;
     --chart-4: 280 65% 60%;
     --chart-5: 340 75% 55%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
   }
 }
 
 @font-face {
-  font-family: 'Gotham';
-  src: url('./fonts/Gotham/Gotham-Black.otf') format('opentype');
+  font-family: "Gotham";
+  src: url("./fonts/Gotham/Gotham-Black.otf") format("opentype");
   font-weight: 900;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Gotham';
-  src: url('./fonts/Gotham/Gotham-Bold.otf') format('opentype'),
-       url('./fonts/Gotham/GothamBold.ttf') format('truetype');
+  font-family: "Gotham";
+  src: url("./fonts/Gotham/Gotham-Bold.otf") format("opentype"),
+    url("./fonts/Gotham/GothamBold.ttf") format("truetype");
   font-weight: bold;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Gotham';
-  src: url('./fonts/Gotham/GothamBoldItalic.ttf') format('truetype');
+  font-family: "Gotham";
+  src: url("./fonts/Gotham/GothamBoldItalic.ttf") format("truetype");
   font-weight: bold;
   font-style: italic;
 }
 
 @font-face {
-  font-family: 'Gotham';
-  src: url('./fonts/Gotham/GothamBook.ttf') format('truetype');
+  font-family: "Gotham";
+  src: url("./fonts/Gotham/GothamBook.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Gotham';
-  src: url('./fonts/Gotham/Gotham-BookItalic.otf') format('opentype'),
-       url('./fonts/Gotham/GothamBookItalic.ttf') format('truetype');
+  font-family: "Gotham";
+  src: url("./fonts/Gotham/Gotham-BookItalic.otf") format("opentype"),
+    url("./fonts/Gotham/GothamBookItalic.ttf") format("truetype");
   font-weight: 400;
   font-style: italic;
 }
 
 @font-face {
-  font-family: 'Gotham';
-  src: url('./fonts/Gotham/Gotham-Light.otf') format('opentype'),
-       url('./fonts/Gotham/GothamLight.ttf') format('truetype');
+  font-family: "Gotham";
+  src: url("./fonts/Gotham/Gotham-Light.otf") format("opentype"),
+    url("./fonts/Gotham/GothamLight.ttf") format("truetype");
   font-weight: 300;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Gotham';
-  src: url('./fonts/Gotham/GothamLightItalic.ttf') format('truetype');
+  font-family: "Gotham";
+  src: url("./fonts/Gotham/GothamLightItalic.ttf") format("truetype");
   font-weight: 300;
   font-style: italic;
 }
 
 @font-face {
-  font-family: 'Gotham';
-  src: url('./fonts/Gotham/GothamMedium.ttf') format('truetype');
+  font-family: "Gotham";
+  src: url("./fonts/Gotham/GothamMedium.ttf") format("truetype");
   font-weight: 500;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Gotham';
-  src: url('./fonts/Gotham/GothamMediumItalic.ttf') format('truetype');
+  font-family: "Gotham";
+  src: url("./fonts/Gotham/GothamMediumItalic.ttf") format("truetype");
   font-weight: 500;
   font-style: italic;
 }
 
 @font-face {
-  font-family: 'Gotham';
-  src: url('./fonts/Gotham/Gotham-Thin.otf') format('opentype');
+  font-family: "Gotham";
+  src: url("./fonts/Gotham/Gotham-Thin.otf") format("opentype");
   font-weight: 100;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Gotham';
-  src: url('./fonts/Gotham/Gotham-ThinItalic.otf') format('opentype');
+  font-family: "Gotham";
+  src: url("./fonts/Gotham/Gotham-ThinItalic.otf") format("opentype");
   font-weight: 100;
   font-style: italic;
 }
 
 @font-face {
-  font-family: 'Gotham';
-  src: url('./fonts/Gotham/Gotham-UltraItalic.otf') format('opentype');
+  font-family: "Gotham";
+  src: url("./fonts/Gotham/Gotham-UltraItalic.otf") format("opentype");
   font-weight: 800;
   font-style: italic;
 }
 
 @font-face {
-  font-family: 'Gotham';
-  src: url('./fonts/Gotham/Gotham-XLight.otf') format('opentype');
+  font-family: "Gotham";
+  src: url("./fonts/Gotham/Gotham-XLight.otf") format("opentype");
   font-weight: 200;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Gotham';
-  src: url('./fonts/Gotham/Gotham-XLightItalic.otf') format('opentype');
+  font-family: "Gotham";
+  src: url("./fonts/Gotham/Gotham-XLightItalic.otf") format("opentype");
   font-weight: 200;
   font-style: italic;
 }
 
 @font-face {
-  font-family: 'Agrandir';
-  src: url('./fonts/Agrandir/Agrandir-GrandHeavy.otf') format('opentype');
+  font-family: "Agrandir";
+  src: url("./fonts/Agrandir/Agrandir-GrandHeavy.otf") format("opentype");
   font-weight: 900;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Agrandir';
-  src: url('./fonts/Agrandir/Agrandir-GrandLight.otf') format('opentype');
+  font-family: "Agrandir";
+  src: url("./fonts/Agrandir/Agrandir-GrandLight.otf") format("opentype");
   font-weight: 300;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Agrandir';
-  src: url('./fonts/Agrandir/Agrandir-Narrow.otf');
+  font-family: "Agrandir";
+  src: url("./fonts/Agrandir/Agrandir-Narrow.otf");
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Agrandir';
-  src: url('./fonts/Agrandir/Agrandir-Regular.otf');
+  font-family: "Agrandir";
+  src: url("./fonts/Agrandir/Agrandir-Regular.otf");
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Agrandir';
-  src: url('./fonts/Agrandir/Agrandir-TextBold.otf');
+  font-family: "Agrandir";
+  src: url("./fonts/Agrandir/Agrandir-TextBold.otf");
   font-weight: 700;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Agrandir';
-  src: url('./fonts/Agrandir/Agrandir-ThinItalic.otf');
+  font-family: "Agrandir";
+  src: url("./fonts/Agrandir/Agrandir-ThinItalic.otf");
   font-weight: 100;
   font-style: italic;
 }
 
 @font-face {
-  font-family: 'Agrandir';
-  src: url('./fonts/Agrandir/Agrandir-Tight.otf');
+  font-family: "Agrandir";
+  src: url("./fonts/Agrandir/Agrandir-Tight.otf");
   font-weight: 500;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Agrandir';
-  src: url('./fonts/Agrandir/Agrandir-WideBlackItalic.otf');
+  font-family: "Agrandir";
+  src: url("./fonts/Agrandir/Agrandir-WideBlackItalic.otf");
   font-weight: 900;
   font-style: italic;
 }
 
 @font-face {
-  font-family: 'Agrandir';
-  src: url('./fonts/Agrandir/Agrandir-WideLight.otf');
+  font-family: "Agrandir";
+  src: url("./fonts/Agrandir/Agrandir-WideLight.otf");
   font-weight: 300;
   font-style: normal;
 }
@@ -240,10 +280,10 @@ body {
     @apply bg-background text-foreground;
   }
   .bg-gradient {
-    @apply bg-gradient-to-r from-[#571FC4] to-[#CB6CE6]
+    @apply bg-gradient-to-r from-[#571FC4] to-[#CB6CE6];
   }
   .text-gradient {
-    @apply bg-gradient-to-r text-transparent bg-clip-text from-[#571FC4] to-[#CB6CE6]
+    @apply bg-gradient-to-r text-transparent bg-clip-text from-[#571FC4] to-[#CB6CE6];
   }
   /* For Webkit-based browsers (Chrome, Safari and Opera) */
   .scrollbar-hide::-webkit-scrollbar {
@@ -251,8 +291,8 @@ body {
   }
   /* For IE, Edge and Firefox */
   .scrollbar-hide {
-    -ms-overflow-style: none;  /* IE and Edge */
-    scrollbar-width: none;  /* Firefox */
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
   }
   /* Tambahkan ini ke file CSS Anda */
   .scroll-container::-webkit-scrollbar {
@@ -261,7 +301,7 @@ body {
   }
 
   .scroll-container::-webkit-scrollbar-thumb {
-    background-color: #571FC4; /* Warna ungu sesuai yang Anda inginkan */
+    background-color: #571fc4; /* Warna ungu sesuai yang Anda inginkan */
     border-radius: 10px;
   }
 

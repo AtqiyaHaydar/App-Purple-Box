@@ -1,18 +1,15 @@
 import type { Metadata } from "next";
-import localFont from "next/font/local";
+import { NextIntlClientProvider } from "next-intl";
 import "./globals.css";
 import { Toaster } from "@/components/ui/toaster";
+import { getLocale, getMessages } from "next-intl/server";
+import { SidebarProvider } from "@/components/ui/sidebar";
+import Providers from "./Providers";
+import createSupabaseServerClient from "@/lib/supabase/server";
 
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
-});
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
-});
+interface RootLayoutProps {
+  children: React.ReactNode;
+}
 
 export const metadata: Metadata = {
   title: "Purple Box | AI-Powered CRM for E-commerce",
@@ -29,15 +26,34 @@ export const metadata: Metadata = {
   },
 };
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+export default async function RootLayout({ children }: RootLayoutProps) {
+  const supabase = await createSupabaseServerClient();
+  const {
+    data: { user },
+  } = await supabase.auth.getUser();
+  const locale = await getLocale();
+  const messages = await getMessages();
+
+  const { data } = await supabase
+    .from("client")
+    .select("image_url")
+    .eq("id", user?.user_metadata.client_id)
+    .single();
+
+  console.log(data);
+
   return (
-    <html lang="en">
+    <html lang={locale}>
       <body className="relative bg-primary-dark font-gotham antialiased">
-        {children}
+        <NextIntlClientProvider messages={messages}>
+          <SidebarProvider>
+            <Providers
+              image_url={data?.image_url}
+              username={user?.user_metadata.full_name}
+            />
+            {children}
+          </SidebarProvider>
+        </NextIntlClientProvider>
         <Toaster />
       </body>
     </html>
