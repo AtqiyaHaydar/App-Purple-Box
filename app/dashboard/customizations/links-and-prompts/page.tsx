@@ -1,9 +1,12 @@
 import React, { Suspense } from "react";
-import CompanyInfoPage from "./client-page";
 import { cn } from "@/lib/utils";
 import { getLinks } from "@/app/actions/link";
 import LoadingPage from "@/components/LoadingPage";
-import LinksAndPromptsPage from "./client-page";
+import dynamic from "next/dynamic";
+
+const LinksAndPromptsPage = dynamic(() => import("./client-page"), {
+  ssr: false,
+});
 
 async function LinksData() {
   const initialData = await getLinks();
@@ -11,8 +14,6 @@ async function LinksData() {
 }
 
 export default async function page() {
-  const initialData = await getLinks();
-
   return (
     <div className="h-screen overflow-y-hidden">
       <div className="p-4 h-screen font-gotham">

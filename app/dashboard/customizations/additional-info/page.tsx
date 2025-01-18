@@ -1,8 +1,12 @@
 import React, { Suspense } from "react";
 import { cn } from "@/lib/utils";
 import createSupabaseServerClient from "@/lib/supabase/server";
-import AdditionalInfoPage from "./client-page";
 import LoadingPage from "@/components/LoadingPage";
+import dynamic from "next/dynamic";
+
+const AdditionalInfoPage = dynamic(() => import("./client-page"), {
+  ssr: false,
+});
 
 async function AdditionalInfoData() {
   const supabase = await createSupabaseServerClient();
@@ -17,7 +21,7 @@ async function AdditionalInfoData() {
   return <AdditionalInfoPage initialData={initialData!} />;
 }
 
-export default async function page() {
+export default function page() {
   return (
     <div className="h-screen overflow-y-hidden">
       <div className="p-4 h-screen font-gotham">

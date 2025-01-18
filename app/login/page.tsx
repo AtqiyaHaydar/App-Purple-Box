@@ -53,7 +53,6 @@ export default function LoginPage() {
         description: "Invalid email or password.",
         variant: "destructive",
       });
-    } finally {
       setIsLoading(false);
     }
   };

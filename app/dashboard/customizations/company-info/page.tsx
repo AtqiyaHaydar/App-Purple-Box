@@ -1,8 +1,12 @@
 import React, { Suspense } from "react";
-import CompanyInfoPage from "./client-page";
 import { cn } from "@/lib/utils";
 import { getClient } from "@/app/actions/client";
 import LoadingPage from "@/components/LoadingPage";
+import dynamic from "next/dynamic";
+
+const CompanyInfoPage = dynamic(() => import("./client-page"), {
+  ssr: false,
+});
 
 async function ClientData() {
   const initialData = await getClient();
