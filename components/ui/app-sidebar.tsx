@@ -30,6 +30,8 @@ import {
 } from "./collapsible";
 import Link from "next/link";
 import { useTranslations } from "use-intl";
+import { usePathname } from "next/navigation";
+import { useCallback } from "react";
 
 // Menu items.
 const dashboardItems = [
@@ -71,6 +73,14 @@ export function AppSidebar({
   image_url: string;
 }) {
   const t = useTranslations();
+  const pathname = usePathname();
+
+  const isCurrent = useCallback(
+    (url: string) => {
+      return pathname === url;
+    },
+    [pathname]
+  );
   return (
     <Sidebar>
       <SidebarHeader className="pt-6">
@@ -92,7 +102,12 @@ export function AppSidebar({
           <SidebarGroupContent>
             <SidebarMenu>
               {dashboardItems.map((item) => (
-                <SidebarMenuItem key={item.title}>
+                <SidebarMenuItem
+                  key={item.title}
+                  className={
+                    isCurrent(item.url) ? "bg-primary-purple rounded-lg" : ""
+                  }
+                >
                   <SidebarMenuButton asChild>
                     <Link href={item.url}>
                       <item.icon />
@@ -117,7 +132,14 @@ export function AppSidebar({
               <SidebarGroupContent>
                 <SidebarMenu>
                   {customizationItems.map((item) => (
-                    <SidebarMenuItem key={item.title}>
+                    <SidebarMenuItem
+                      key={item.title}
+                      className={
+                        isCurrent(item.url)
+                          ? "bg-primary-purple rounded-lg"
+                          : ""
+                      }
+                    >
                       <SidebarMenuButton asChild>
                         <Link href={item.url}>
                           <item.icon />
