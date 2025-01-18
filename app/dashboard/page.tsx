@@ -1,12 +1,12 @@
 // Library Import
-import React, { useState } from "react";
+import React, { Suspense, useState } from "react";
 import { cn } from "@/lib/utils";
 
 // Components Import
-import Sidebar from "@/components/Sidebar";
 import Dashboard from "@/components/dashboard/Dashboard";
 import DashboardHeader from "@/components/dashboard/DashboardHeader";
 import createSupabaseServerClient from "@/lib/supabase/server";
+import LoadingPage from "@/components/LoadingPage";
 
 const CRMDashboard = async () => {
   const supabase = await createSupabaseServerClient();
@@ -22,12 +22,13 @@ const CRMDashboard = async () => {
           )}
         >
           <div className="bg-[#0A0A0A] relative w-full h-full inset-0 rounded-xl flex flex-col items-center">
-            <DashboardHeader />
-            {/* <Statistics /> */}
-            <div className="p-2 w-full h-full overflow-hidden">
-              <Dashboard id={user?.user_metadata.client_id!} />
-              {/* <MobileDashboard selectedColumn={selectedColumn} /> */}
-            </div>
+            <Suspense fallback={<LoadingPage />}>
+              <DashboardHeader />
+              {/* <Statistics /> */}
+              <div className="p-2 w-full h-full overflow-hidden">
+                <Dashboard id={user?.user_metadata.client_id!} />
+              </div>
+            </Suspense>
           </div>
         </div>
       </div>

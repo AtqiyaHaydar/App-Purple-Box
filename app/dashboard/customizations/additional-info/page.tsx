@@ -1,7 +1,8 @@
-import React from "react";
+import React, { Suspense } from "react";
 import { cn } from "@/lib/utils";
 import createSupabaseServerClient from "@/lib/supabase/server";
 import AdditionalInfoPage from "./client-page";
+import LoadingPage from "@/components/LoadingPage";
 
 export default async function page() {
   const supabase = await createSupabaseServerClient();
@@ -24,7 +25,9 @@ export default async function page() {
         >
           <div className="bg-[#0A0A0A] relative w-full h-full inset-0 rounded-xl flex flex-col items-center ">
             <div className="p-2 w-full h-full overflow-hidden overflow-y-scroll flex flex-col gap-12">
-              <AdditionalInfoPage initialData={initialData!} />
+              <Suspense fallback={<LoadingPage />}>
+                <AdditionalInfoPage initialData={initialData!} />
+              </Suspense>
             </div>
           </div>
         </div>

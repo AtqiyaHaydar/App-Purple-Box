@@ -1,8 +1,10 @@
-import React from "react";
+import React, { Suspense } from "react";
 import CompanyInfoPage from "./client-page";
 import { cn } from "@/lib/utils";
 import createSupabaseServerClient from "@/lib/supabase/server";
 import { getLinks } from "@/app/actions/link";
+import { Loader2 } from "lucide-react";
+import LoadingPage from "@/components/LoadingPage";
 
 export default async function page() {
   const initialData = await getLinks();
@@ -17,7 +19,9 @@ export default async function page() {
         >
           <div className="bg-[#0A0A0A] relative w-full h-full inset-0 rounded-xl flex flex-col items-center ">
             <div className="p-2 w-full h-full overflow-hidden overflow-y-scroll flex flex-col gap-12">
-              <CompanyInfoPage initialData={initialData!} />
+              <Suspense fallback={<LoadingPage />}>
+                <CompanyInfoPage initialData={initialData!} />
+              </Suspense>
             </div>
           </div>
         </div>
