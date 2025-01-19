@@ -1,8 +1,6 @@
-import React, { Suspense } from "react";
+import React from "react";
 import { cn } from "@/lib/utils";
 import createSupabaseServerClient from "@/lib/supabase/server";
-import LoadingPage from "@/components/LoadingPage";
-import dynamic from "next/dynamic";
 import AdditionalInfoPage from "./client-page";
 
 async function AdditionalInfoData() {

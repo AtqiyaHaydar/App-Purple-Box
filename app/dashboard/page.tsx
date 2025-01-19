@@ -1,12 +1,11 @@
 // Library Import
-import React, { Suspense, useState } from "react";
+import React from "react";
 import { cn } from "@/lib/utils";
 
 // Components Import
 import Dashboard from "@/components/dashboard/Dashboard";
 import DashboardHeader from "@/components/dashboard/DashboardHeader";
 import createSupabaseServerClient from "@/lib/supabase/server";
-import LoadingPage from "@/components/LoadingPage";
 
 const CRMDashboard = async () => {
   const supabase = await createSupabaseServerClient();

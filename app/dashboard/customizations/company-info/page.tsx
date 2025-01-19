@@ -1,4 +1,4 @@
-import React, { Suspense } from "react";
+import React from "react";
 import { cn } from "@/lib/utils";
 import { getClient } from "@/app/actions/client";
 import CompanyInfoPage from "./client-page";
