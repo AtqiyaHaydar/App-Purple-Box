@@ -32,9 +32,7 @@ export default function page() {
         >
           <div className="bg-[#0A0A0A] relative w-full h-full inset-0 rounded-xl flex flex-col items-center ">
             <div className="p-2 w-full h-full overflow-hidden overflow-y-scroll flex flex-col gap-12">
-              <Suspense fallback={<LoadingPage />}>
-                <AdditionalInfoData />
-              </Suspense>
+              <AdditionalInfoData />
             </div>
           </div>
         </div>
