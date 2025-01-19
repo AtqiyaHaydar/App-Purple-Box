@@ -26,6 +26,10 @@
         "label": "Nama Chatbot",
         "placeholder": "Masukkan nama chatbot Anda di sini..."
       },
+      "sections": {
+        "generalInfo": "Informasi Umum",
+        "chatbotInfo": "Informasi Chatbot"
+      },
       "customDomain": {
         "label": "Domain Kustom",
         "placeholder": "Masukkan domain kustom Anda di sini..."

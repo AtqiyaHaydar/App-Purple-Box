@@ -21,6 +21,10 @@
       "label": "Logo hochladen oder ändern",
       "preview": "Logo-Vorschau"
     },
+    "sections": {
+      "generalInfo": "Allgemeine Informationen",
+      "chatbotInfo": "Chatbot-Informationen"
+    },
     "fields": {
       "chatbotName": {
         "label": "Chatbot-Name",

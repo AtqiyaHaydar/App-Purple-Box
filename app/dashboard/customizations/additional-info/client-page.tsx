@@ -36,6 +36,8 @@ export default function AdditionalInfoPage({
     initialData?.additional_informations as string
   );
 
+  console.log(additionalInfo);
+
   async function handleDelete(index: string) {
     try {
       await deleteFile(index);

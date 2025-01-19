@@ -21,6 +21,10 @@
       "label": "تحميل أو تغيير الشعار",
       "preview": "معاينة الشعار"
     },
+    "sections": {
+      "generalInfo": "معلومات عامة",
+      "chatbotInfo": "معلومات الروبوت"
+    },
     "fields": {
       "chatbotName": {
         "label": "اسم الروبوت المحادث",

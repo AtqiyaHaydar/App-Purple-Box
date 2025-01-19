@@ -18,6 +18,7 @@ import { toast } from "@/hooks/use-toast";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { getSupabaseFrontendClient } from "@/lib/supabase/client";
 import type { User } from "@supabase/supabase-js";
+import { useRouter } from "next/navigation";
 
 const profileSchema = z.object({
   name: z.string().min(2, "Name must be at least 2 characters."),
@@ -28,6 +29,7 @@ const profileSchema = z.object({
 export default function ProfileForm({ user }: { user: User }) {
   const [isLoading, setIsLoading] = useState(false);
   const supabase = getSupabaseFrontendClient();
+  const router = useRouter();
 
   const form = useForm({
     resolver: zodResolver(profileSchema),
@@ -43,12 +45,14 @@ export default function ProfileForm({ user }: { user: User }) {
       setIsLoading(true);
       const { error } = await supabase.auth.updateUser({
         data: {
-          name: data.name,
+          full_name: data.name,
           avatar_url: data.avatar_url,
         },
       });
 
       if (error) throw error;
+
+      router.refresh();
 
       toast({
         title: "Profile Updated",
@@ -73,7 +77,7 @@ export default function ProfileForm({ user }: { user: User }) {
       >
         <h2 className="text-xl font-semibold">Your Profile</h2>
 
-        <FormField
+        {/* <FormField
           control={form.control}
           name="avatar_url"
           render={({ field }) => (
@@ -101,7 +105,7 @@ export default function ProfileForm({ user }: { user: User }) {
               <FormMessage />
             </FormItem>
           )}
-        />
+        /> */}
 
         <FormField
           control={form.control}

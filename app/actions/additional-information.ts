@@ -45,10 +45,9 @@ export async function deleteFile(index: string) {
     const cookieStore = cookies();
 
     const response = await fetch(
-      `${process.env.NEXT_CHATBOT_BACKEND_URL}/api/client/additional-information`,
+      `${process.env.NEXT_CHATBOT_BACKEND_URL}/api/client/additional-information?index=${index}`,
       {
         method: "DELETE",
-        body: JSON.stringify({ index }),
         headers: {
           Cookie: cookieStore.toString(),
           Authorization: `Bearer ${session?.access_token}`,

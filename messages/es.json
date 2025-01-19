@@ -21,6 +21,10 @@
       "label": "Subir o Cambiar Logo",
       "preview": "Vista Previa del Logo"
     },
+    "sections": {
+      "generalInfo": "Información General",
+      "chatbotInfo": "Información del Chatbot"
+    },
     "fields": {
       "chatbotName": {
         "label": "Nombre del Chatbot",
