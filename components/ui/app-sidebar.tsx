@@ -132,14 +132,7 @@ export function AppSidebar({
               <SidebarGroupContent>
                 <SidebarMenu>
                   {customizationItems.map((item) => (
-                    <SidebarMenuItem
-                      key={item.title}
-                      // className={
-                      //   isCurrent(item.url)
-                      //     ? "bg-primary-purple rounded-lg"
-                      //     : ""
-                      // }
-                    >
+                    <SidebarMenuItem key={item.title}>
                       <SidebarMenuButton asChild>
                         <Link href={item.url}>
                           <item.icon />
