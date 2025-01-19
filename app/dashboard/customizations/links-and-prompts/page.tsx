@@ -1,12 +1,7 @@
-import React, { Suspense } from "react";
+import React from "react";
 import { cn } from "@/lib/utils";
 import { getLinks } from "@/app/actions/link";
-import LoadingPage from "@/components/LoadingPage";
-import dynamic from "next/dynamic";
-
-const LinksAndPromptsPage = dynamic(() => import("./client-page"), {
-  ssr: false,
-});
+import LinksAndPromptsPage from "./client-page";
 
 async function LinksData() {
   const initialData = await getLinks();

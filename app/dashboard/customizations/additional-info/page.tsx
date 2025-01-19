@@ -3,10 +3,7 @@ import { cn } from "@/lib/utils";
 import createSupabaseServerClient from "@/lib/supabase/server";
 import LoadingPage from "@/components/LoadingPage";
 import dynamic from "next/dynamic";
-
-const AdditionalInfoPage = dynamic(() => import("./client-page"), {
-  ssr: false,
-});
+import AdditionalInfoPage from "./client-page";
 
 async function AdditionalInfoData() {
   const supabase = await createSupabaseServerClient();
@@ -21,7 +18,7 @@ async function AdditionalInfoData() {
   return <AdditionalInfoPage initialData={initialData!} />;
 }
 
-export default function page() {
+export default async function page() {
   return (
     <div className="h-screen overflow-y-hidden">
       <div className="p-4 h-screen font-gotham">
