@@ -16,7 +16,7 @@ export async function middleware(req: NextRequest) {
     }
   }
 
-  if (["/login", "/register"].includes(req.nextUrl.pathname)) {
+  if (["/login"].includes(req.nextUrl.pathname)) {
     if (user) {
       return NextResponse.redirect(new URL("/dashboard", req.url));
     }

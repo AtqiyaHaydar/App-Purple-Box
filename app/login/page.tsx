@@ -43,8 +43,6 @@ export default function LoginPage() {
     try {
       setIsLoading(true);
       const authData = await singInWithEmailAndPassword(data);
-      console.log("Logged in successfully:", authData);
-      router.refresh();
       router.push("/dashboard");
     } catch (error: any) {
       console.error("Error logging in:", error.message);
