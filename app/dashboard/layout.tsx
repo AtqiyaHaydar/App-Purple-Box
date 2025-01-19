@@ -22,7 +22,7 @@ const DashboardLayout = ({
 }: Readonly<{
   children: React.ReactNode;
 }>) => {
-  return <div>{children}</div>;
+  return <Suspense fallback={<LoadingPage />}>{children}</Suspense>;
 };
 
 export default DashboardLayout;

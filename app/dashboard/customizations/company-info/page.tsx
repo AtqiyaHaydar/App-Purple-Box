@@ -1,7 +1,12 @@
-import React from "react";
+import React, { Suspense } from "react";
 import { cn } from "@/lib/utils";
 import { getClient } from "@/app/actions/client";
-import CompanyInfoPage from "./client-page";
+import LoadingPage from "@/components/LoadingPage";
+import dynamic from "next/dynamic";
+
+const CompanyInfoPage = dynamic(() => import("./client-page"), {
+  ssr: false,
+});
 
 async function ClientData() {
   const initialData = await getClient();
@@ -19,7 +24,9 @@ export default async function page() {
         >
           <div className="bg-[#0A0A0A] relative w-full h-full inset-0 rounded-xl flex flex-col items-center ">
             <div className="p-2 w-full h-full overflow-hidden overflow-y-scroll flex flex-col gap-12">
-              <ClientData />
+              <Suspense fallback={<LoadingPage />}>
+                <ClientData />
+              </Suspense>
             </div>
           </div>
         </div>
