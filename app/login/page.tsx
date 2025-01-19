@@ -42,7 +42,7 @@ export default function LoginPage() {
   const onSubmit = async (data: FormValues) => {
     try {
       setIsLoading(true);
-      const authData = await singInWithEmailAndPassword(data);
+      await singInWithEmailAndPassword(data);
 
       router.push("/dashboard");
     } catch (error: any) {
