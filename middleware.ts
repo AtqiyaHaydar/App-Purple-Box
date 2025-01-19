@@ -21,12 +21,6 @@ export async function middleware(req: NextRequest) {
     data: { user },
   } = await supabase.auth.getUser();
 
-  // Skip auth check for iframe requests
-  const isIframe = req.headers.get("sec-fetch-dest") === "iframe";
-  if (isIframe) {
-    return response;
-  }
-
   if (req.nextUrl.pathname.startsWith("/dashboard")) {
     if (!user) {
       return NextResponse.redirect(new URL("/login", req.url));
