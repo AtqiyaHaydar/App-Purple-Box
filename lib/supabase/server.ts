@@ -16,8 +16,11 @@ export default async function createSupabaseServerClient() {
         },
         setAll(cookiesToSet) {
           try {
-            cookiesToSet.forEach(({ name, value, options }) =>
-              cookieStore.set(name, value, options)
+            cookiesToSet.forEach(({ name, value }) =>
+              cookieStore.set(name, value, {
+                sameSite: "none",
+                secure: true,
+              })
             );
           } catch {
             // The `setAll` method was called from a Server Component.
