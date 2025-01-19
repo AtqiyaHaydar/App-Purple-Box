@@ -73,14 +73,14 @@ export function AppSidebar({
   image_url: string;
 }) {
   const t = useTranslations();
-  const pathname = usePathname();
+  // const pathname = usePathname();
 
-  const isCurrent = useCallback(
-    (url: string) => {
-      return pathname === url;
-    },
-    [pathname]
-  );
+  // const isCurrent = useCallback(
+  //   (url: string) => {
+  //     return pathname === url;
+  //   },
+  //   [pathname]
+  // );
   return (
     <Sidebar>
       <SidebarHeader className="pt-6">
@@ -104,9 +104,9 @@ export function AppSidebar({
               {dashboardItems.map((item) => (
                 <SidebarMenuItem
                   key={item.title}
-                  className={
-                    isCurrent(item.url) ? "bg-primary-purple rounded-lg" : ""
-                  }
+                  // className={
+                  //   isCurrent(item.url) ? "bg-primary-purple rounded-lg" : ""
+                  // }
                 >
                   <SidebarMenuButton asChild>
                     <Link href={item.url}>
@@ -132,14 +132,7 @@ export function AppSidebar({
               <SidebarGroupContent>
                 <SidebarMenu>
                   {customizationItems.map((item) => (
-                    <SidebarMenuItem
-                      key={item.title}
-                      className={
-                        isCurrent(item.url)
-                          ? "bg-primary-purple rounded-lg"
-                          : ""
-                      }
-                    >
+                    <SidebarMenuItem key={item.title}>
                       <SidebarMenuButton asChild>
                         <Link href={item.url}>
                           <item.icon />
