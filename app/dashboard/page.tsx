@@ -22,13 +22,11 @@ const CRMDashboard = async () => {
           )}
         >
           <div className="bg-[#0A0A0A] relative w-full h-full inset-0 rounded-xl flex flex-col items-center">
-            <Suspense fallback={<LoadingPage />}>
-              <DashboardHeader />
-              {/* <Statistics /> */}
-              <div className="p-2 w-full h-full overflow-hidden">
-                <Dashboard id={user?.user_metadata.client_id!} />
-              </div>
-            </Suspense>
+            <DashboardHeader />
+            {/* <Statistics /> */}
+            <div className="p-2 w-full h-full overflow-hidden">
+              <Dashboard id={user?.user_metadata.client_id!} />
+            </div>
           </div>
         </div>
       </div>
